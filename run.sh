@@ -1,0 +1,1 @@
+python3 -m pytest --log-cli-level debug --junit-xml=tjb_junit/basicresults.xml "$TJB_ROOT/test_hqa_app_pscr.py"

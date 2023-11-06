@@ -1,0 +1,37 @@
+{
+    "iccid2_cmd": {
+        "android8": "service call iphonesubinfo 12 i32 2",
+        "android10": "service call iphonesubinfo 11 i32 2"},
+    "pin_change_cmd": {
+        "android8": "service call phone 19",
+        "android10": "service call phone 8"},
+    "pin_verify_cmd": {
+        "android8": "service call phone 17",
+        "android10": "service call phone 6"},
+    "pci_regex": {
+        "android8": "[0-9].[0-9][C,D]?.[0-9]",
+        "android10": "[0-9].[0-9A-Z]{3}.[0-9]{2}$"},
+    "vault_regex": {
+        "android8": "\\d+.\\d+.\\d+.\\d+",
+        "android10": "[A-Z]{4}_[0-9]{2}.[0-9]{2}.[0-9]{2}.[0-9]{2}$"},
+    "ota_file_regex": {
+        "android8": "(3.\\d+.\\d+.\\d+/)",
+        "android10": "(4.\\d+.\\d+.\\d+/)"},
+    "disable_ethernet": {
+        "android8": "ifconfig eth0 down",
+        "android10": "echo peripheral > /d/msm_otg/mode"},
+    "enable_ethernet": {
+        "android8": "ifconfig eth0 up",
+        "android10": "echo host > /d/msm_otg/mode"},
+	"radio_set_power": {
+		"android8": "service call phone 31",
+		"android10": "service call phone 20"},
+    "radio_is_on": {
+        "android8": "service call phone 14",
+        "android10": "service call phone 3"},
+    "get_operator_list": {
+        "android8": "service call phone 99",
+        "android10": "service call phone 102"
+    }
+    
+}
